@@ -60,7 +60,7 @@ Watch FreqNet in action! Our deployment demo showcases real-time Deepfake detect
   - Loss: Binary cross-entropy.
 - **Dataset**: Balanced Deepfake dataset with real and fake images from diverse synthesis pipelines.
 
-## 🚀 Deployment
+## Deployment
 
 FreqNet is designed for real-world deployment:
 - **Use Case**: Social media content moderation, digital forensics, law enforcement.
@@ -74,7 +74,6 @@ FreqNet is designed for real-world deployment:
 ## 📈 Limitations
 
 - **Dataset Scope**: Evaluated on a single dataset; may require cross-dataset validation.
-- **Computational Cost**: Handcrafted feature extraction adds overhead, impacting real-time performance.
 - **Frame-Based**: Lacks temporal analysis for video Deepfakes.
 
 ## 🔮 Future Work
@@ -100,21 +99,16 @@ FreqNet is designed for real-world deployment:
    - Get the Deepfake dataset from [Kaggle](https://www.kaggle.com/datasets/manj11karki/deapraka-and-real-images).
 4. **Train the Model**:
    ```bash
-   python train.py --dataset_path <path-to-dataset> --model_path <path-to-save-model>
+   model.py --dataset_path <path-to-dataset> --model_path <path-to-save-model>
    ```
-5. **Evaluate**:
+5. **Run Deployment**:
    ```bash
-   python evaluate.py --model_path <path-to-trained-model> --test_data <path-to-test-data>
-   ```
-6. **Run Deployment**:
-   ```bash
-   python deploy.py --model_path <path-to-trained-model> --input <image-or-video-path>
+   app.py --model_path <path-to-trained-model> --input <image-or-video-path>
    ```
 
-## 👥 Authors
+## 👥 Author
 
 - **Aruni Saxena** (202418006)
-- **Krish Sagar** (202201139)
 
 ## 📜 Citation
 
