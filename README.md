@@ -46,7 +46,7 @@ FreqNet was evaluated on a balanced Deepfake dataset from [Kaggle](https://www.k
 
 Watch FreqNet in action! Our deployment demo showcases real-time Deepfake detection on sample images and videos.
 
-🔗 [View Demo Video](https://example.com/freqnet-demo-video) *(Replace with actual video link)*
+🔗 [View Demo Video](https://drive.google.com/file/d/1-gnwkmd9704hmey6Sh5fnnPhhjz8-LUU/view?usp=drive_link) 
 
 ## 🛠️ Implementation
 
@@ -97,7 +97,7 @@ FreqNet is designed for real-world deployment:
    pip install -r requirements.txt
    ```
 3. **Download Dataset**:
-   - Get the Deepfake dataset from [Kaggle](https://www.kaggle.com/datasets/manj11karki/deapraka-and-real-images).
+   - Get the Deepfake dataset from [Kaggle](https://www.kaggle.com/datasets/manjilkarki/deepfake-and-real-images).
 4. **Train the Model**:
    ```bash
    python train.py --dataset_path <path-to-dataset> --model_path <path-to-save-model>
@@ -122,10 +122,3 @@ FreqNet is designed for real-world deployment:
 @article{saxena2025freqnet,
   title={Deepfake Forensics Reimagined: Learning How It Was Faked, Not Just What Is Fake},
   author={Saxena, Aruni and Sagar, Krish},
-  year={2025}
-}
-```
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
