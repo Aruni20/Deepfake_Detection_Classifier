@@ -4,11 +4,11 @@
 
 **FreqNet** is a cutting-edge hybrid Deepfake detection model that combines deep learning with classical image processing to identify synthetic media with high accuracy and robustness. By fusing ResNet-50’s semantic features with handcrafted descriptors (FFT, Canny, LBP), FreqNet detects subtle artifacts missed by traditional CNNs, making it ideal for digital forensics, social media moderation, and law enforcement.
 
-## 🚀 Project Overview
+## Project Overview
 
 Deepfakes—synthetic media mimicking real human appearances—threaten media authenticity, enabling misinformation and fraud. Traditional CNN-based detectors (e.g., ResNet-50, XceptionNet) focus on semantic cues but struggle with statistical artifacts like frequency inconsistencies or unnatural textures. **FreqNet** addresses this by analyzing *how* Deepfakes are made, not just *what* they depict, achieving superior performance across diverse manipulation types.
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 Deepfakes, powered by GANs, VAEs, and face-swapping tools, create realistic media that challenge trust in digital content. While CNNs achieve high accuracy in controlled settings, they falter with:
 - Subtle statistical artifacts (e.g., frequency noise, edge smoothing).
@@ -17,7 +17,7 @@ Deepfakes, powered by GANs, VAEs, and face-swapping tools, create realistic medi
 
 FreqNet overcomes these limitations with a hybrid approach, combining deep and handcrafted features for robust, interpretable detection.
 
-## 🌟 Novelty of FreqNet
+## Novelty of FreqNet
 
 FreqNet redefines Deepfake detection with a **hybrid architecture** that sets it apart:
 - **Feature Fusion**: Integrates ResNet-50’s deep semantic features with handcrafted descriptors:
@@ -28,9 +28,9 @@ FreqNet redefines Deepfake detection with a **hybrid architecture** that sets it
 - **Robustness**: Excels in challenging conditions (e.g., compression, low resolution, unseen fakes).
 - **Interpretability**: Handcrafted features provide clear insights into *why* an image is fake, enhancing trust in forensic use cases.
 
-## 📊 Results
+##  Results
 
-FreqNet was evaluated on a balanced Deepfake dataset from [Kaggle](https://www.kaggle.com/datasets/manj11karki/deapraka-and-real-images), outperforming a baseline CNN across key metrics:
+FreqNet was evaluated on a balanced Deepfake dataset from [Kaggle](https://www.kaggle.com/datasets/manjilkarki/deepfake-and-real-images?resource=download-directory), outperforming a baseline CNN across key metrics:
 
 | Model           | Accuracy | AUC   | Precision | Recall |
 |-----------------|----------|-------|-----------|--------|
