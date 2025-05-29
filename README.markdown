@@ -2,8 +2,6 @@
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue) ![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red) ![License](https://img.shields.io/badge/License-MIT-green)
 
-I’m Aruni Saxena, and with Krish Sagar, we created **FreqNet**, a hybrid model to catch Deepfakes with 91.6% accuracy. Unlike standard CNNs, FreqNet mixes ResNet-50’s deep features with classical image processing—FFT, Canny edge detection, and LBP—to spot subtle manipulation artifacts. It’s built for real-world use, like digital forensics or social media moderation, and you can try it via our Streamlit app.
-
 ## Why Deepfakes Are a Problem
 
 Deepfakes, made with GANs or tools like DeepFaceLab, look scarily real, fueling misinformation and fraud. Standard CNNs like ResNet-50 catch big-picture facial features but miss tiny statistical clues, struggle with compressed images, and aren’t great at explaining fakes. FreqNet fixes this by digging into how Deepfakes are crafted.
@@ -12,20 +10,6 @@ Deepfakes, made with GANs or tools like DeepFaceLab, look scarily real, fueling 
 
 CNNs focus on high-level patterns like faces or expressions, but modern Deepfakes nail those. They miss low-level artifacts: weird frequency noise, smoothed edges from blending, or odd skin textures. FreqNet tackles this with classical features. FFT spots unnatural frequency patterns, Canny catches edge inconsistencies, and LBP flags texture quirks. This hybrid approach boosts accuracy by 7.4% and makes FreqNet robust against tricky conditions like low-res images.
 
-## How FFT Works
-
-FreqNet uses the Fast Fourier Transform (FFT) to find frequency-domain anomalies. For a grayscale image \( f(x, y) \) of size \( M \times N \), the 2D FFT is:
-
-\[
-F(u, v) = \sum_{x=0}^{M-1} \sum_{y=0}^{N-1} f(x, y) \cdot e^{-2\pi i \left( \frac{ux}{M} + \frac{vy}{N} \right)}
-\]
-
-We extract the magnitude spectrum \( |F(u, v)| \) and compute:
-- Mean: \( \mu = \frac{1}{MN} \sum_{u=0}^{M-1} \sum_{v=0}^{N-1} |F(u, v)| \)
-- Standard Deviation: \( \sigma = \sqrt{\frac{1}{MN} \sum_{u=0}^{M-1} \sum_{v=0}^{N-1} \left( |F(u, v)| - \mu \right)^2} \)
-- Skewness: \( \text{Skew} = \frac{1}{MN} \sum_{u=0}^{M-1} \sum_{v=0}^{N-1} \left( \frac{|F(u, v)| - \mu}{\sigma} \right)^3 \)
-
-These catch unnatural frequency noise Deepfakes leave behind.
 
 ## Results
 
