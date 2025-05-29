@@ -6,7 +6,7 @@
 
 ## Project Overview
 
-Deepfakes—synthetic media mimicking real human appearances—threaten media authenticity, enabling misinformation and fraud. Traditional CNN-based detectors (e.g., ResNet-50, XceptionNet) focus on semantic cues but struggle with statistical artifacts like frequency inconsistencies or unnatural textures. **FreqNet** addresses this by analyzing *how* Deepfakes are made, not just *what* they depict, achieving superior performance across diverse manipulation types.
+Deepfakes synthetic media mimicking real human appearances—threaten media authenticity, enabling misinformation and fraud. Traditional CNN-based detectors (e.g., ResNet-50, XceptionNet) focus on semantic cues but struggle with statistical artifacts like frequency inconsistencies or unnatural textures. **FreqNet** addresses this by analyzing *how* Deepfakes are made, not just *what* they depict, achieving superior performance across diverse manipulation types.
 
 ##  Problem Statement
 
@@ -102,7 +102,7 @@ FreqNet is designed for real-world deployment:
    model.py --dataset_path <path-to-dataset> --model_path <path-to-save-model>
    ```
 5. **Run Deployment**:
- The model once trained is deployed on Streamlit  [Streamlit](https://aruni20-deepfake-detection-classifier-app-qlu24w.streamlit.app/).
+ The model once trained is deployed on [Streamlit](https://aruni20-deepfake-detection-classifier-app-qlu24w.streamlit.app/).
 
 ## 👥 Author
 
