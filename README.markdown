@@ -64,12 +64,10 @@ Watch FreqNet in action! Our deployment demo showcases real-time Deepfake detect
 
 FreqNet is designed for real-world deployment:
 - **Use Case**: Social media content moderation, digital forensics, law enforcement.
-- **Setup**: Deployable as a standalone Python application or integrated into web platforms via Flask/Django APIs.
-- **Example**: Run `deploy.py` to process images/videos in real-time:
-  ```bash
-  python deploy.py --model_path <path-to-trained-model> --input <image-or-video-path>
-  ```
-- **Performance**: Optimized for GPU environments; CPU fallback available for low-resource settings.
+- **Setup**: Deployable as a standalone Python application or integrated into web platforms via Steamliit.
+- 🔗 Deployed on [Streamlit]() 
+
+
 
 ## 📈 Limitations
 
@@ -111,14 +109,13 @@ FreqNet is designed for real-world deployment:
    python deploy.py --model_path <path-to-trained-model> --input <image-or-video-path>
    ```
 
-## 👥 Authors
+## 👥 Author
 
 - **Aruni Saxena** (202418006)
-- **Krish Sagar** (202201139)
 
 ## 📜 Citation
 
 ```bibtex
 @article{saxena2025freqnet,
   title={Deepfake Forensics Reimagined: Learning How It Was Faked, Not Just What Is Fake},
-  author={Saxena, Aruni and Sagar, Krish},
+  author={Saxena, Aruni},
