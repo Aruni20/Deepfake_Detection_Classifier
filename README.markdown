@@ -46,9 +46,9 @@ FreqNet was evaluated on a balanced Deepfake dataset from [Kaggle](https://www.k
 
 Watch FreqNet in action! Our deployment demo showcases real-time Deepfake detection on sample images and videos.
 
-🔗 [View Demo Video](https://example.com/freqnet-demo-video) *(Replace with actual video link)*
+🔗 [View Demo Video](https://drive.google.com/file/d/1-gnwkmd9704hmey6Sh5fnnPhhjz8-LUU/view?usp=sharing) 
 
-## 🛠️ Implementation
+## Implementation
 
 - **Framework**: PyTorch (GPU-accelerated).
 - **Architecture**: Hybrid model with frozen ResNet-50 (up to layer 4) and handcrafted feature extraction (FFT, Canny, LBP).
@@ -71,12 +71,12 @@ FreqNet is designed for real-world deployment:
   ```
 - **Performance**: Optimized for GPU environments; CPU fallback available for low-resource settings.
 
-## 📈 Limitations
+##  Limitations
 
 - **Dataset Scope**: Evaluated on a single dataset; may require cross-dataset validation.
 - **Frame-Based**: Lacks temporal analysis for video Deepfakes.
 
-## 🔮 Future Work
+## Future Work
 
 - **Cross-Dataset Testing**: Evaluate on FaceForensics++, DFDC, Celeb-DF for broader generalizability.
 - **Video Analysis**: Add temporal features (e.g., optical flow, LSTMs) for video Deepfakes.
@@ -84,7 +84,7 @@ FreqNet is designed for real-world deployment:
 - **Explainability**: Integrate Grad-CAM/SHAP for transparent predictions.
 - **Adversarial Defense**: Enhance robustness against attacks targeting Deepfake detectors.
 
-## 🏗️ Getting Started
+## 🏗Getting Started
 
 1. **Clone the Repository**:
    ```bash
@@ -102,9 +102,7 @@ FreqNet is designed for real-world deployment:
    model.py --dataset_path <path-to-dataset> --model_path <path-to-save-model>
    ```
 5. **Run Deployment**:
-   ```bash
-   app.py --model_path <path-to-trained-model> --input <image-or-video-path>
-   ```
+ The model once trained is deployed on Streamlit  [Streamlit](https://aruni20-deepfake-detection-classifier-app-qlu24w.streamlit.app/).
 
 ## 👥 Author
 
