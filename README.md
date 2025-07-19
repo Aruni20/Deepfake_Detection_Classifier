@@ -6,7 +6,7 @@
 
 ## Project Overview
 
-Deepfakes—synthetic media mimicking real human appearances—threaten media authenticity, enabling misinformation and fraud. Traditional CNN-based detectors (e.g., ResNet-50, XceptionNet) focus on semantic cues but struggle with statistical artifacts like frequency inconsistencies or unnatural textures. **FreqNet** addresses this by analyzing *how* Deepfakes are made, not just *what* they depict, achieving superior performance across diverse manipulation types.
+Deepfakes are synthetic media mimicking real human appearances that threaten media authenticity, enabling misinformation and fraud. Traditional CNN-based detectors (e.g., ResNet-50, XceptionNet) focus on semantic cues but struggle with statistical artifacts like frequency inconsistencies or unnatural textures. **FreqNet** addresses this by analyzing *how* Deepfakes are made, not just *what* they depict, achieving superior performance across diverse manipulation types.
 
 ## Problem Statement
 
