@@ -65,7 +65,7 @@ Watch FreqNet in action! Our deployment demo showcases real-time Deepfake detect
 FreqNet is designed for real-world deployment:
 - **Use Case**: Social media content moderation, digital forensics, law enforcement.
 - **Setup**: Deployable as a standalone Python application or integrated into web platforms via Steamliit.
--  Deployed on [Streamlit]() 
+-  Deployed on [Streamlit](https://deepfakedetectionaruni.streamlit.app/) 
 
 
 
